@@ -16,7 +16,8 @@ public class App
     public static void main( String[] args ) throws FileNotFoundException, IOException
     {
         Properties prop=new Properties();
-        prop.load(new FileInputStream(new File("src/main/resources/vars.properties")));
+        // prop.load(new FileInputStream(new File("src/main/resources/vars.properties")));
+        prop.load(App.class.getClassLoader().getResourceAsStream("vars.properties"));
         // System.out.println( "Hello World!" );
          System.out.println( "valor recuperado: "+prop.getProperty("PROPIEDAD_1"));
         String resource= prop.getProperty("PROPIEDAD_1");

@@ -61,6 +61,11 @@
         <descriptorRefs>
           <descriptorRef>jar-with-dependencies</descriptorRef>
         </descriptorRefs>
+        <archive>
+          <manifest>
+            <mainClass>bo.edu.uap.app.App</mainClass>
+          </manifest>
+        </archive>
       </configuration>
       <executions>
         <execution>
